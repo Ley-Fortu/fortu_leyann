@@ -90,7 +90,7 @@ $config['base_url'] 				= getenv('BASE_URL') ?: '';
 | variable to blank.
 |
 */
-$config['index_page']               = '';
+$config['index_page']               = 'https://fortu-leyann.onrender.com';
 
 /*
 |--------------------------------------------------------------------------
