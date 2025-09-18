@@ -64,7 +64,7 @@ $config['VERSION']                 = '4.2.4';
 | -------------------------------------------------------------------
 | Values: development and production
 */
-$config['ENVIRONMENT']             = 'production';
+$config['ENVIRONMENT']             = 'development';
 
 /*
 |--------------------------------------------------------------------------
@@ -79,7 +79,7 @@ $config['ENVIRONMENT']             = 'production';
 | WARNING: You MUST set this value!
 |
 */
-$config['base_url'] 				= getenv('BASE_URL') ?: '';
+$config['base_url'] 				= '';
 
 /*
 |--------------------------------------------------------------------------
@@ -90,7 +90,7 @@ $config['base_url'] 				= getenv('BASE_URL') ?: '';
 | variable to blank.
 |
 */
-$config['index_page']               = 'https://fortu-leyann.onrender.com';
+$config['index_page']               = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -105,7 +105,7 @@ $config['index_page']               = 'https://fortu-leyann.onrender.com';
 |   3 = All
 |
 */
-$config['log_threshold']            = 1;
+$config['log_threshold']            = 0;
 $config['log_dir']                  = 'runtime/logs/';
 
 /*
@@ -128,7 +128,7 @@ $config['log_dir']                  = 'runtime/logs/';
 | Note: This will NOT disable or override the LavaLust-specific
 |	autoloading (app/config/autoload.php)
 */
-$config['composer_autoload']        = TRUE;
+$config['composer_autoload']        = FALSE;
 
 /*
 |--------------------------------------------------------------------------
@@ -170,7 +170,7 @@ $config['charset']					= 'UTF-8';
 | app/views/errors/ directory.  Use a full server path with trailing slash.
 |
 */
-$config['error_view_path']         	= APP_DIR . 'views/errors/';
+$config['error_view_path']         	= '';
 
 /*
 |--------------------------------------------------------------------------
@@ -184,7 +184,7 @@ $config['error_view_path']         	= APP_DIR . 'views/errors/';
 |	if you have 'default folder' and '404.php file' inside error folder in view
 |
 */
-$config['404_override']       	    = 'errors/error_404';
+$config['404_override']       	    = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -212,7 +212,7 @@ $config['language'] 				= 'en-US';
 $config['sess_driver']             = 'file';
 $config['sess_cookie_name']        = 'LLSession';
 $config['sess_expiration']         = 7200;
-$config['sess_save_path']          = 'runtime/sessions/';
+$config['sess_save_path']          = '';
 $config['sess_match_ip']           = TRUE;
 $config['sess_match_fingerprint']  = TRUE;
 $config['sess_time_to_update']     = 300;
