@@ -1,0 +1,4 @@
+- [x] Change default route to Students::index in routes.php
+- [x] Improve GUI for create.php form
+- [x] Improve GUI for edit.php form
+- [x] Add consistent header/navigation to student views
